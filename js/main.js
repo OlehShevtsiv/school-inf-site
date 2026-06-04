@@ -52,7 +52,7 @@
         <div class="work-card__body">
           <h3 class="work-card__title">${escapeHtml(work.title)}</h3>
           <p class="work-card__author">${escapeHtml(work.author || "")}</p>
-          <p class="work-card__desc">${escapeHtml(work.description || "")}</p>
+          <p class="work-card__desc">${work.description}</p>
           <p class="work-card__action">${meta.action}</p>
         </div>`;
 
@@ -93,7 +93,7 @@
     const body = document.getElementById("mediaModalBody");
     document.getElementById("mediaModalTitle").textContent = work.title;
     document.getElementById("mediaModalAuthor").textContent = work.author || "";
-    document.getElementById("mediaModalDesc").textContent = work.description || "";
+    document.getElementById("mediaModalDesc").innerHTML = work.description || "";
 
     if (work.type === "image") {
       body.innerHTML = `<img src="${escapeHtml(work.file)}" alt="${escapeHtml(work.title)}">`;
@@ -138,19 +138,19 @@
   window.openModal = openModal; // використовується python-runner.js
 
   // ---------- Таби програми ----------
-  const tabs = document.getElementById("curriculumTabs");
-  tabs.addEventListener("click", (e) => {
-    const btn = e.target.closest("[data-tab]");
-    if (!btn) return;
-    tabs.querySelectorAll(".tabs__btn").forEach((b) => {
-      b.classList.remove("is-active");
-      b.setAttribute("aria-selected", "false");
-    });
-    tabs.querySelectorAll(".tabs__panel").forEach((p) => p.classList.remove("is-active"));
-    btn.classList.add("is-active");
-    btn.setAttribute("aria-selected", "true");
-    document.getElementById(btn.dataset.tab).classList.add("is-active");
-  });
+  // const tabs = document.getElementById("curriculumTabs");
+  // tabs.addEventListener("click", (e) => {
+  //   const btn = e.target.closest("[data-tab]");
+  //   if (!btn) return;
+  //   tabs.querySelectorAll(".tabs__btn").forEach((b) => {
+  //     b.classList.remove("is-active");
+  //     b.setAttribute("aria-selected", "false");
+  //   });
+  //   tabs.querySelectorAll(".tabs__panel").forEach((p) => p.classList.remove("is-active"));
+  //   btn.classList.add("is-active");
+  //   btn.setAttribute("aria-selected", "true");
+  //   document.getElementById(btn.dataset.tab).classList.add("is-active");
+  // });
 
   // ---------- Мобільне меню ----------
   const burger = document.getElementById("navBurger");

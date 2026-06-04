@@ -10,8 +10,8 @@ const SITE_CONFIG = {
 
   // Контакти (секція «Приєднуйтеся до нас»)
   contacts: [
-    { label: "Адреса",  value: "м. Буськ, Львівська область" },
-    { label: "Телефон", value: "+38 (0XX) XXX-XX-XX", href: "tel:+380000000000" },
-    { label: "Email",   value: "school@example.com",  href: "mailto:school@example.com" },
+    { label: "Адреса",  value: "вул. Є. Петрушевича, 4, Буськ, Львівська область" },
+    { label: "Телефон", value: "+38 (032) 642-12-01", href: "tel:+380000000000" },
+    { label: "Email",   value: "gimnasium.busk@gmail.com",  href: "mailto:gimnasium.busk@gmail.com" },
   ],
 };

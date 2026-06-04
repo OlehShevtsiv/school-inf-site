@@ -4,16 +4,16 @@
    ============================================================ */
 
 :root {
-  --bg: #07090f;
-  --bg-alt: #0b0f1a;
-  --surface: #111827;
-  --surface-2: #16203a;
-  --border: rgba(120, 160, 255, 0.14);
-  --text: #e6ecff;
-  --text-dim: #97a3c4;
-  --accent: #22d3ee;          /* неоновий cyan */
-  --accent-2: #a78bfa;        /* фіолетовий */
-  --accent-3: #f472b6;        /* рожевий */
+  --bg: #d4dfff;
+  --bg-alt: #beccf3;
+  --surface: #5b6ff2;
+  --surface-2: #5d62f8;
+  --border: rgba(111, 137, 198, 0.838);
+  --text: #07227b;
+  --text-dim: #0c1326;
+  --accent: #0994a9;          /* неоновий cyan */
+  --accent-2: #4c3c7a;        /* фіолетовий */
+  --accent-3: #92245d;        /* рожевий */
   --accent-grad: linear-gradient(120deg, #22d3ee, #a78bfa 55%, #f472b6);
   --font-display: 'Unbounded', 'Inter', system-ui, sans-serif;
   --font-body: 'Inter', system-ui, -apple-system, sans-serif;
@@ -48,7 +48,7 @@ img, video, canvas { max-width: 100%; display: block; }
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 100;
-  background: rgba(7, 9, 15, 0.72);
+  background: rgba(39, 110, 140, 0.72);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
