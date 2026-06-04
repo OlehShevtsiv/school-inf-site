@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Інформатика — день відкритих дверей | Буський ЗЗСО — Гімназія ім. Є. Петрушевича</title>
+  <meta name="description" content="Інформатика у Буському ЗЗСО — Гімназії ім. Є. Петрушевича: Python, Scratch, 3D-графіка та 3D-друк. Роботи наших учнів.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;💻&lt;/text&gt;&lt;/svg&gt;">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="nav__logo">
+        <span class="nav__logo-icon">&lt;/&gt;</span>
+        <span class="nav__logo-text">Інформатика<em>.Гімназія</em></span>
+      </a>
+      <button class="nav__burger" id="navBurger" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#advantages">Переваги</a></li>
+        <li><a href="#directions">Напрями</a></li>
+        <li><a href="#curriculum">Програма</a></li>
+        <li><a href="#works">Роботи учнів</a></li>
+        <li><a href="#contacts" class="nav__cta">Приєднатися</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- 1. HERO -->
+    <section class="hero">
+      <canvas id="heroCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__content container">
+        <p class="hero__badge reveal">🚀 День відкритих дверей</p>
+        <h1 class="hero__title reveal">
+          Інформатика —<br>твій старт <span class="glow-text">у майбутнє</span>
+        </h1>
+        <p class="hero__school reveal" id="heroSchoolName">
+          Буський ЗЗСО — Гімназія ім. Є. Петрушевича<br>при ЛНУ ім. І. Франка Буської міської ради
+        </p>
+        <p class="hero__subtitle reveal">
+          Python · Scratch · 3D-графіка · 3D-друк —<br class="mobile-br">
+          тут код перетворюється на реальні проєкти.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#works" class="btn btn--primary">Дивитися роботи учнів</a>
+          <a href="#directions" class="btn btn--ghost">Що ми вивчаємо</a>
+        </div>
+        <p class="hero__hint reveal" aria-hidden="true">⤺ покрутіть 3D-модель мишкою — її зробили в такій самій програмі, яку вивчають наші учні</p>
+      </div>
+      <a href="#advantages" class="hero__scroll" aria-label="Прокрутити вниз"><span></span></a>
+    </section>
+
+    <!-- 2. ПЕРЕВАГИ ШКОЛИ -->
+    <section class="section" id="advantages">
+      <div class="container">
+        <p class="section__eyebrow reveal">Чому ми</p>
+        <h2 class="section__title reveal">Переваги нашої гімназії</h2>
+        <div class="cards-grid cards-grid--5">
+          <article class="card reveal">
+            <div class="card__icon">🖨️</div>
+            <h3>Власний 3D-принтер</h3>
+            <p>Учні проєктують моделі у Tinkercad і Blender — і тримають надруковану річ у руках уже на наступному уроці.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">💻</div>
+            <h3>Сучасний комп'ютерний клас</h3>
+            <p>Обладнані робочі місця для кожного учня: програмування, графіка та мультимедіа без черг і компромісів.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">🐍</div>
+            <h3>Програмування з 7 класу</h3>
+            <p>Від блоків Scratch до справжнього Python: поступовий шлях, на якому кожен крок зрозумілий і цікавий.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">🧩</div>
+            <h3>Проєктне навчання та STEM</h3>
+            <p>Не «вивчи параграф», а «зроби продукт»: ігри, сайти, 3D-моделі та власні винаходи у командах.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">🎓</div>
+            <h3>Співпраця з ЛНУ ім. І. Франка</h3>
+            <p>Гімназія при Львівському національному університеті — місток до вищої освіти вже зі шкільної лави.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. НАПРЯМИ НАВЧАННЯ -->
+    <section class="section section--alt" id="directions">
+      <div class="container">
+        <p class="section__eyebrow reveal">Напрями</p>
+        <h2 class="section__title reveal">Що ми тут навчаємо</h2>
+        <div class="directions">
+
+          <article class="direction reveal">
+            <div class="direction__head">
+              <span class="direction__icon direction__icon--python">🐍</span>
+              <h3>Програмування Python</h3>
+            </div>
+            <p>Найпопулярніша мова світу — від перших команд до власних ігор та програм. Списки, цикли, функції, графіка — все на практиці.</p>
+            <ul class="direction__list">
+              <li>Ігри: «Вгадай число», вікторини, аркади</li>
+              <li>Графіка та візуалізація даних</li>
+              <li>Олімпіадні задачі та власні проєкти</li>
+            </ul>
+            <p class="direction__tag">8–10 клас · Thonny, replit</p>
+          </article>
+
+          <article class="direction reveal">
+            <div class="direction__head">
+              <span class="direction__icon direction__icon--scratch">🐱</span>
+              <h3>Scratch</h3>
+            </div>
+            <p>Перший крок у програмування: складаєш програму з блоків, як з LEGO, — і вже за урок маєш власну гру чи мультфільм.</p>
+            <ul class="direction__list">
+              <li>Анімації та інтерактивні історії</li>
+              <li>Ігри з керуванням і рахунком</li>
+              <li>Логіка, що готує до Python</li>
+            </ul>
+            <p class="direction__tag">Молодші класи – 7 клас · scratch.mit.edu</p>
+          </article>
+
+          <article class="direction reveal">
+            <div class="direction__head">
+              <span class="direction__icon direction__icon--3d">🧊</span>
+              <h3>3D-графіка</h3>
+            </div>
+            <p>Тривимірне моделювання за програмою 9 класу: від простих фігур у Tinkercad до повноцінних сцен і рендерів у Blender.</p>
+            <ul class="direction__list">
+              <li>Моделювання: примітиви, екструдування</li>
+              <li>Вершини, ребра, грані — як у геймдеві</li>
+              <li>Рендеринг власних 3D-сцен</li>
+            </ul>
+            <p class="direction__tag">9–10 клас · Tinkercad, Blender</p>
+          </article>
+
+          <article class="direction reveal">
+            <div class="direction__head">
+              <span class="direction__icon direction__icon--print">🖨️</span>
+              <h3>3D-друк</h3>
+            </div>
+            <p>STEM-проєкти на власному шкільному 3D-принтері: спроєктував модель на комп'ютері — надрукував і забрав додому.</p>
+            <ul class="direction__list">
+              <li>Повний цикл: ідея → модель → друк</li>
+              <li>Брелоки, деталі, корисні винаходи</li>
+              <li>Гурткова та проєктна діяльність</li>
+            </ul>
+            <p class="direction__tag">Гурток / STEM · власний 3D-принтер</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ПРОГРАМА 8-10 КЛАСІВ -->
+    <section class="section" id="curriculum">
+      <div class="container">
+        <p class="section__eyebrow reveal">Програма МОН</p>
+        <h2 class="section__title reveal">Що вивчають у 8–10 класах</h2>
+        <p class="section__lead reveal">Навчаємо за сучасними модельними програмами НУШ «Інформатика. 7–9 класи» та програмою МОН для 10 класу.</p>
+
+        <div class="tabs reveal" id="curriculumTabs">
+          <div class="tabs__buttons" role="tablist">
+            <button class="tabs__btn is-active" role="tab" aria-selected="true" data-tab="grade8">8 клас</button>
+            <button class="tabs__btn" role="tab" aria-selected="false" data-tab="grade9">9 клас</button>
+            <button class="tabs__btn" role="tab" aria-selected="false" data-tab="grade10">10 клас</button>
+          </div>
+
+          <div class="tabs__panel is-active" id="grade8" role="tabpanel">
+            <ul class="topics">
+              <li><span class="topics__icon">🛡️</span><div><strong>Цифрова безпека</strong><p>Безпечна поведінка в інтернеті, захист особистих даних, цифрова гігієна.</p></div></li>
+              <li><span class="topics__icon">🔢</span><div><strong>Опрацювання даних</strong><p>Як комп'ютер «розуміє» інформацію: кодування, двійкова система.</p></div></li>
+              <li><span class="topics__icon">🐍</span><div><strong>Програмування Python</strong><p>Списки, кортежі, пошук даних, графічні примітиви — пишемо справжній код.</p></div></li>
+              <li><span class="topics__icon">🌐</span><div><strong>Веб-технології</strong><p>Створення та публікація власних сайтів, основи HTML.</p></div></li>
+              <li><span class="topics__icon">🎬</span><div><strong>Мультимедіа</strong><p>Редагування аудіо та відео — цифрова творчість.</p></div></li>
+            </ul>
+          </div>
+
+          <div class="tabs__panel" id="grade9" role="tabpanel">
+            <ul class="topics">
+              <li><span class="topics__icon">🧊</span><div><strong>3D-графіка та моделювання</strong><p>Tinkercad і Blender: примітиви, екструдування, вершини–ребра–грані, рендеринг.</p></div></li>
+              <li><span class="topics__icon">🗄️</span><div><strong>Бази даних</strong><p>Що таке СУБД, як зберігати дані та робити запити на вибірку.</p></div></li>
+              <li><span class="topics__icon">🐍</span><div><strong>Поглиблений Python</strong><p>Структури даних, алгоритми, власні проєкти.</p></div></li>
+              <li><span class="topics__icon">📊</span><div><strong>Дані, моделювання, безпека</strong><p>Наскрізні лінії: аналіз даних і відповідальна робота в мережі.</p></div></li>
+            </ul>
+          </div>
+
+          <div class="tabs__panel" id="grade10" role="tabpanel">
+            <ul class="topics">
+              <li><span class="topics__icon">🌍</span><div><strong>Базовий модуль</strong><p>Інформаційні технології в суспільстві, моделі й моделювання, аналіз і візуалізація даних.</p></div></li>
+              <li><span class="topics__icon">🐍</span><div><strong>Алгоритмізація та програмування</strong><p>Вибірковий модуль: поглиблений Python, креативне програмування.</p></div></li>
+              <li><span class="topics__icon">🧊</span><div><strong>Тривимірне моделювання</strong><p>Вибірковий модуль: професійна робота з 3D-графікою.</p></div></li>
+              <li><span class="topics__icon">🎨</span><div><strong>Веб-дизайн і графіка</strong><p>Вибіркові модулі: основи веб-дизайну, графічний дизайн, бази даних.</p></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ГАЛЕРЕЯ РОБІТ -->
+    <section class="section section--alt" id="works">
+      <div class="container">
+        <p class="section__eyebrow reveal">Портфоліо</p>
+        <h2 class="section__title reveal">Роботи наших учнів</h2>
+        <p class="section__lead reveal">Це не картинки з інтернету — це справжні проєкти учнів гімназії. Python-програми можна <strong>запустити прямо тут</strong>, на сайті.</p>
+
+        <div class="works-filter reveal" id="worksFilter" role="group" aria-label="Фільтр робіт">
+          <button class="works-filter__btn is-active" data-filter="all">Усі</button>
+          <button class="works-filter__btn" data-filter="python">🐍 Python</button>
+          <button class="works-filter__btn" data-filter="scratch">🐱 Scratch</button>
+          <button class="works-filter__btn" data-filter="image">📷 Фото</button>
+          <button class="works-filter__btn" data-filter="video">🎬 Відео</button>
+        </div>
+
+        <div class="works-grid" id="worksGrid"><!-- рендериться з js/works-data.js --></div>
+      </div>
+    </section>
+
+    <!-- 6. КОНТАКТИ -->
+    <section class="section contacts" id="contacts">
+      <div class="container">
+        <div class="contacts__inner reveal">
+          <h2 class="section__title">Приєднуйтеся до нас!</h2>
+          <p class="contacts__text">
+            Запрошуємо майбутніх учнів та їхніх батьків на день відкритих дверей.
+            Подивіться на наші проєкти наживо, запустіть 3D-принтер разом з нами
+            та напишіть свою першу програму!
+          </p>
+          <div class="contacts__cards" id="contactsCards"><!-- рендериться з js/config.js --></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p id="footerSchool">Буський ЗЗСО — Гімназія ім. Є. Петрушевича при ЛНУ ім. І. Франка Буської міської ради</p>
+      <p class="site-footer__sub">Кабінет інформатики · День відкритих дверей</p>
+    </div>
+  </footer>
+
+  <!-- МОДАЛ: Python runner -->
+  <div class="modal" id="pythonModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__window modal__window--wide">
+      <button class="modal__close" data-close aria-label="Закрити">✕</button>
+      <h3 class="modal__title" id="pyModalTitle">Python</h3>
+      <p class="modal__author" id="pyModalAuthor"></p>
+      <p class="modal__desc" id="pyModalDesc"></p>
+      <div class="pyrunner">
+        <div class="pyrunner__editor-wrap">
+          <div class="pyrunner__toolbar">
+            <span class="pyrunner__filename">main.py</span>
+            <button class="btn btn--run" id="pyRunBtn">▶ Запустити</button>
+          </div>
+          <textarea id="pyEditor" class="pyrunner__editor" spellcheck="false" aria-label="Редактор Python-коду"></textarea>
+        </div>
+        <div class="pyrunner__console-wrap">
+          <div class="pyrunner__toolbar"><span class="pyrunner__filename">Консоль</span>
+            <button class="btn btn--ghost-sm" id="pyClearBtn">Очистити</button>
+          </div>
+          <pre id="pyConsole" class="pyrunner__console" aria-live="polite">Натисніть «Запустити», щоб виконати код 🐍</pre>
+        </div>
+      </div>
+      <p class="pyrunner__tip">💡 Спробуйте змінити код і запустити ще раз — він виконується прямо у вашому браузері!</p>
+    </div>
+  </div>
+
+  <!-- МОДАЛ: перегляд фото/відео/Scratch -->
+  <div class="modal" id="mediaModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__window">
+      <button class="modal__close" data-close aria-label="Закрити">✕</button>
+      <h3 class="modal__title" id="mediaModalTitle"></h3>
+      <p class="modal__author" id="mediaModalAuthor"></p>
+      <div class="modal__media" id="mediaModalBody"></div>
+      <p class="modal__desc" id="mediaModalDesc"></p>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/works-data.js"></script>
+  <script src="libs/three.min.js"></script>
+  <script src="js/scene3d.js"></script>
+  <script src="js/python-runner.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
